@@ -6,6 +6,7 @@ COLOR_GREEN = "\033[32m"
 COLOR_RED = "\033[31m"
 COLOR_YELLOW = "\033[33m"
 COLOR_CYAN = "\033[36m"
+COLOR_BLACK = "\033[31"
 
 def greet():
     """Ask for user's name and greet them."""
