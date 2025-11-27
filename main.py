@@ -45,6 +45,8 @@ def show_menu():
         print("1. Greet")
         print("2. Guess the number")
         print("3. Exit")
+        print("3. Program Info")
+        print("4. Exit")
 
         choice = input("Choose an option (1-3): ")
 
@@ -53,11 +55,20 @@ def show_menu():
         elif choice == "2":
             guess_the_number()
         elif choice == "3":
+            show_program_info()
+        elif choice == "4":
             print("Goodbye!")
             break
+
         else:
             print(f"{COLOR_RED}Invalid option. Try again.{COLOR_RESET}")
 
+def show_program_info():
+    """Show information about the program."""
+    print(f"{COLOR_GREEN}=== Program Information ==={COLOR_RESET}")
+    print("Project: GitHub Collaboration Demo")
+    print("Description: A basic project for practicing branches and pull requests.")
+    print("Author: Your Name")
+
 if __name__ == "__main__":
     show_menu()
-    
